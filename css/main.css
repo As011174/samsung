@@ -1,0 +1,1525 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: "SamsungOne", Arial, Helvetica, sans-serif;
+}
+
+div.wrapper {
+  width: 100%;
+}
+
+div.wrapper > div.header {
+  width: 100%;
+  height: 80px;
+}
+
+div.wrapper > div.header > div.logo {
+  width: 12.5%;
+  height: 100%;
+
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+}
+
+div.wrapper > div.header > div.logo > img {
+  width: 65%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+div.wrapper > div.header > div.menu {
+  width: 44%;
+  height: 100%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.wrapper > div.header > div.menu > nav {
+  width: 100%;
+  height: 100%;
+}
+
+div.wrapper > div.header > div.menu > nav > ul {
+  width: 100%;
+  height: 100%;
+  padding-left: 3px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 80px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li > a {
+  color: black;
+  padding: 0 5px;
+  font-family: "SamsungOne", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 5px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li > a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(8) > div.smenu{
+  width: 1120px;
+  height: 292px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  border-radius: 20px;
+  left: 0;
+  margin-left: 150px;
+  display: none;
+  z-index: 10000;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:hover > div.smenu{
+  display: block;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li > div.smenu > div{
+  width: 19%;
+  height: 100%;
+  
+  display: inline-block;
+  vertical-align: top;
+  
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li > div.smenu > div > ul{
+  width: 100%;
+  height: 40px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li > div.smenu > div > ul > li{
+  
+  height: 30px;
+  margin: 8px 1px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li > div.smenu > div > ul > li > a{
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  
+  color: rgb(74, 67, 67);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li > div.smenu > div > ul > li > a:hover{
+  font-weight: 600;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu{
+  width: 672px;
+  height: 568px;
+  border-top: 1px solid gray;
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  transition: 350ms;
+  
+}
+
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3):hover > div.zmenu{
+  display: block;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.left{
+  width: 224px;
+  height: 544px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  vertical-align: top;
+  border-right: 1px solid lightgray;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.left > ul{
+  width: 100%;
+  
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.left > ul > li{
+  width: 100%;
+  height: 30px;
+  margin: 7px 1px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.left > ul > li > a{
+  font-size: 14px;
+  color: rgb(38, 34, 34);
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.left > ul > li > a:hover{
+  color: black;
+  font-weight: 600;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu >div.right{
+  width: 444px;
+  height: 544px;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.right > p{
+  width: 100%;
+  height: 36px;
+  line-height: 5px;
+  
+  padding: 20px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 10px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.right > div{
+  width: 130px;
+  height: 148px;
+  background-color: rgb(248, 248, 248);
+  display: inline-block;
+  vertical-align: top;
+  margin: 8px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.right > div > div.img{
+  width: 100%;
+  height: 65%;
+  margin: 0px auto;
+  margin-top: 15px;
+  ;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.right > div > div.img > img{
+ width: 100%;
+ height: 100%;
+  object-fit: contain;
+  
+  transition: 350ms;
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.right > div:hover > div.img > img{
+  transform: scale(1.1);
+}
+
+div.wrapper > div.header > div.menu > nav > ul > li:nth-of-type(3) > div.zmenu > div.right > div > p{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  height: 35px;
+  line-height: 35px;
+}
+
+div.wrapper > div.header > div.s-menu {
+  width: 27%;
+  height: 100%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.wrapper > div.header > div.s-menu > ul {
+  width: 100%;
+  height: 100%;
+  padding-left: 160px;
+}
+
+div.wrapper > div.header > div.s-menu > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 80px;
+  margin: 0 6px;
+}
+
+div.wrapper > div.header > div.s-menu > ul > li > a {
+  color: black;
+  font-family: "SamsungOne", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 5px;
+}
+
+div.wrapper > div.header > div.s-menu > ul > li > a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  
+}
+
+div.wrapper > div.header > div.box {
+  width: 10.5%;
+  height: 100%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.wrapper > div.header > div.box > div.search {
+  width: 30%;
+  height: 100%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.wrapper > div.header > div.box > div.search > i {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+}
+
+
+div.wrapper > div.header > div.box > div.cart {
+  width: 30%;
+  height: 100%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.wrapper > div.header > div.box > div.cart > i {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+}
+
+div.wrapper > div.header > div.box > div.log-in {
+  width: 30%;
+  height: 100%;
+
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+div.wrapper > div.header > div.box > div.log-in > i {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+}
+
+div.wrapper > div.header > div.box > div.log-in > a > i {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+  color: #242424;
+}
+
+
+div.wrapper > div.header > div.box > div.log-in>div.submenu{
+  width: 230px;
+  height: 230px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gray;
+  display: none;
+}
+
+
+div.wrapper > div.header > div.box > div.log-in:hover>div.submenu{
+  width: 230px;
+  height: 230px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gray;
+  display: block;
+}
+
+div.wrapper > div.header > div.box > div.log-in>div.submenu > ul {
+  width: 100%;
+}
+
+
+div.wrapper > div.header > div.box > div.log-in>div.submenu > ul > li {
+  width: 100%;
+  margin: 30px 20px;
+  
+}
+
+
+div.wrapper > div.header > div.box > div.log-in>div.submenu > ul > li > a {
+  color: black;
+  font-size: 14px;
+  
+}
+
+
+div.wrapper > div.header > div.box > div.log-in>div.submenu > ul > li:hover > a {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.wrapper > div.slider {
+  width: 95%;
+  height: 639.88px;
+  margin: 0 auto;
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text01 {
+    width: 500px;
+    height: 400px;
+    
+    position: absolute;
+    bottom: calc(50% - 200px);
+    left: 50px;
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 10px;
+    font-size: 48px;
+    color: white;
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text01
+  >p{
+    font-size: 18px;
+  color: white;
+  }
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text02 {
+  width: 500px;
+  height: 400px;
+
+  position: absolute;
+  bottom: calc(50% - 200px);
+  left: 50px;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 10px;
+  font-size: 48px;
+  color: white;
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text02
+  > p {
+  font-size: 18px;
+  color: white;
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text03 {
+  width: 500px;
+  height: 400px;
+  
+  position: absolute;
+  bottom: calc(50% - 200px);
+  left: 50px;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 10px;
+  font-size: 48px;
+  color: white;
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text03
+  > p {
+  font-size: 18px;
+  color: white;
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text04 {
+  width: 500px;
+  height: 400px;
+  
+  position: absolute;
+  bottom: calc(50% - 200px);
+  left: 50px;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 10px;
+  font-size: 48px;
+  color: rgb(20, 3, 3);
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text04
+  > p {
+  font-size: 18px;
+  color: rgb(31, 5, 5);
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text05 {
+  width: 500px;
+  height: 400px;
+  
+  position: absolute;
+  bottom: calc(50% - 200px);
+  left: 50px;
+  text-align: left;
+  padding-top: 80px;
+  
+  padding-left: 10px;
+  font-size: 48px;
+  color: white;
+}
+
+div.wrapper
+  > div.slider
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.text05
+  > p {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+div.wrapper > div.box1 {
+  width: 95%;
+  height: 100px;
+
+  margin: 0 auto;
+}
+
+div.wrapper > div.box1 > h2 {
+  width: 100%;
+  height: 106px;
+  line-height: 106px;
+  text-align: center;
+  font-size: 45px;
+  font-family: "SamsungOne", sans-serif;
+}
+
+div.wrapper > div.box2 {
+  width: 95%;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.wrapper > div.box2 > a {
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 20px;
+  font-family: "SamsungOne", sans-serif;
+  text-decoration: 2px solid black underline;
+}
+
+div.wrapper > div.mini-menu {
+  width: 95%;
+  height: 50px;
+
+  margin: 0 auto;
+}
+
+div.wrapper > div.mini-menu > nav {
+  width: 100%;
+  height: 100%;
+}
+
+div.wrapper > div.mini-menu > nav > ul {
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+}
+
+div.wrapper > div.mini-menu > nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.wrapper > div.mini-menu > nav > ul > li > a {
+  color: black;
+  font-size: 20px;
+  margin: 20px 20px;
+  font-family: "SamsungOne", sans-serif;
+  font-weight: 600;
+}
+
+div.wrapper > div.contain {
+  width: 100%;
+  height: 708px;
+
+  text-align: center;
+}
+
+div.wrapper > div.contain > div{
+  width: 30%;
+  height: 330px;
+  
+  
+  cursor: pointer;
+  transition: 350ms;
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgb(244, 244, 244);
+  border-radius: 30px;
+  margin: 12px 12px;
+}
+
+div.wrapper > div.contain > div > div.img{
+  width: 201px;
+  height: 151px;
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+  margin: 30px auto;
+}
+
+div.wrapper > div.contain > div > div.img > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 350ms;
+  mix-blend-mode: multiply;
+}
+
+div.wrapper > div.contain > div:hover > div.img > img{
+  transform: scale(1.05);
+}
+
+div.wrapper > div.contain > div > p.text{
+  font-size: 18px;
+font-weight: 600;
+font-family: Arial, Helvetica, sans-serif;
+
+margin-top: 10px;
+}
+
+div.wrapper > div.contain > div > p.save{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+    
+  margin: 20px auto; 
+  transition: 500ms;
+}
+
+div.wrapper > div.contain > div:hover > p.save{
+  transform: rotateY(-50px);
+  opacity: 0;
+}
+
+div.wrapper > div.contain > div > p.save > span:nth-of-type(1){
+  font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: blue;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+div.wrapper > div.contain > div > p.save > span:nth-of-type(2){
+  font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(14, 14, 18);
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+div.wrapper > div.contain > div > a{
+  background-color: black;
+    color: white;
+    padding: 10.5px 20px;
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-50% , 0);
+    transition: 350ms;
+    opacity: 0;
+}
+
+div.wrapper > div.contain > div:hover > a{
+  transform: translate(-50px , -50px);
+    opacity: 1;
+}
+div.wrapper > div.key-feature-tab {
+  width: 95%;
+  height: 810px;
+  background-color: rgb(197, 215, 227);
+  padding-top: 20px;
+  margin-top: 40px;
+  margin: 30px auto 0;
+  overflow: hidden;
+}
+
+div.wrapper > div.key-feature-tab > div.key-feature-tab-title {
+  width: 100%;
+  height: 46px;
+
+  text-align: center;
+  margin-top: 30px;
+}
+
+div.wrapper > div.key-feature-tab > div.key-feature-tab-title > p {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+div.wrapper > div.key-feature-tab > div.tab {
+  width: 100%;
+  height: 64px;
+  position: relative;
+  z-index: 5;
+}
+
+div.key-feature-tab > div.tab > nav {
+  width: 100%;
+  height: 100%;
+}
+
+div.key-feature-tab > div.tab > nav > ul {
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+}
+
+div.key-feature-tab > div.tab > nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+
+  line-height: 64px;
+  margin: 0 10px;
+}
+
+div.key-feature-tab > div.tab > nav > ul > li > a {
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 0 30px;
+}
+
+div.key-feature-tab > div.tab > nav > ul > li > a:hover {
+  background-color: rgb(83%, 88%, 92%);
+  border-radius: 30px;
+}
+
+div.wrapper > div.key-feature-tab > div.img {
+  width: 100%;
+  height: 554px;
+  background-image: url(../img/feature/img.tab.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+}
+
+div.wrapper > div.key-feature-tab > p {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  position: relative;
+  z-index: 5;
+  top: -50px;
+}
+
+div.wrapper > div.key-feature-tab > p:nth-of-type(2) {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+div.wrapper > div.TV {
+  width: 95%;
+  height: 810px;
+  background-image: url(../img/TV\ &\ Audio.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 45px;
+  position: relative;
+}
+
+div.wrapper > div.TV > h2 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+div.wrapper > div.TV > div.menu {
+  width: 100%;
+  height: 64px;
+}
+
+div.wrapper > div.TV > div.menu > nav {
+  width: 100%;
+  height: 100%;
+}
+
+div.wrapper > div.TV > div.menu > nav > ul {
+  text-align: center;
+}
+
+div.wrapper > div.TV > div.menu > nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 64px;
+  margin: 0 20px;
+}
+
+div.wrapper > div.TV > div.menu > nav > ul > li > a {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 2px 10px;
+}
+
+div.wrapper > div.TV > div.menu > nav > ul > li > a:hover {
+  background-color: rgb(234, 233, 230);
+  border-radius: 30px;
+}
+
+div.wrapper > div.TV > div.finish {
+  width: 100%;
+  height: 100px;
+
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 90px;
+}
+
+div.wrapper > div.TV > div.finish > h3 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper > div.TV > div.finish > p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+  color: gray;
+}
+
+div.wrapper > div.TV > div.Buy {
+  width: 100%;
+  height: 60px;
+
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+}
+
+div.wrapper > div.TV > div.Buy > a {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+  line-height: 60px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: 350ms;
+}
+
+div.wrapper > div.TV > div.Buy > a:hover {
+  background-color: rgba(121, 121, 117, 0.89);
+}
+
+div.wrapper > div.home {
+  width: 95%;
+  height: 810px;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div.wrapper > div.home > div.header {
+  width: 100%;
+  height: 45.6px;
+
+  margin: 48px 0 0;
+  text-align: center;
+}
+
+div.wrapper > div.home > div.header > h3 {
+  font-size: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+div.wrapper > div.home > div.menu {
+  width: 100%;
+  height: 64px;
+}
+
+div.wrapper > div.home > div.menu > nav {
+  width: 100%;
+  height: 100%;
+}
+
+div.wrapper > div.home > div.menu > nav > ul {
+  text-align: center;
+}
+
+div.wrapper > div.home > div.menu > nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+
+  line-height: 64px;
+  margin: 0 24px;
+}
+
+div.wrapper > div.home > div.menu > nav > ul > li > a {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+div.wrapper > div.home > div.img {
+  width: 100%;
+  height: 480px;
+  text-align: center;
+  background-image: url(../img/home/LOB1_Bundle-DT.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.wrapper > div.home > div.text {
+  width: 100%;
+  height: 100px;
+}
+
+div.wrapper > div.home > div.text > h3 {
+  font-size: 53px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper > div.home > div.text > p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+}
+
+div.wrapper > div.home > div.text > div.links {
+  display: inline-block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+div.wrapper > div.home > div.text > div.links a {
+  display: inline-block;
+  
+  text-align: center;
+}
+div.wrapper > div.home > div.text > div.links a:first-child {
+  color: #242424;
+  text-decoration: underline;
+}
+div.wrapper > div.home > div.text > div.links a:last-child {
+  background-color: #242424;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+div.wrapper > div.sustain {
+  width: 95%;
+  height: 810px;
+  background-color: green;
+  margin: 0 auto;
+  background-image: url(../img/sustain/EarthDay-KVSGlobal-Recycling-Day_KV_HP_DT_1440X810_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+div.wrapper > div.sustain > div.header {
+  width: 100%;
+  height: 45.6px;
+  
+  margin-top: 48px;
+  position: absolute;
+  text-align: center;
+}
+
+div.wrapper > div.sustain > div.header > h3 {
+  font-size: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper > div.sustain > div.menu {
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  margin-top: 93.6px;
+}
+
+div.wrapper > div.sustain > div.menu > nav {
+  width: 100%;
+  height: 100%;
+}
+
+div.wrapper > div.sustain > div.menu > nav > ul {
+  text-align: center;
+}
+
+div.wrapper > div.sustain > div.menu > nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  
+  line-height: 64px;
+  margin: 0 24px;
+}
+
+
+div.wrapper > div.sustain > div.menu > nav > ul > li > a {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 0 6px;
+  
+}
+
+div.wrapper > div.sustain > div.menu > nav > ul  > li :first-child > a {
+  text-decoration: underline;
+}
+
+div.wrapper > div.sustain > div.save{
+  width: 100%;
+  height: 58px;
+  
+  position: absolute;
+  bottom: 110px;
+  text-align: center;
+}
+
+div.wrapper > div.sustain > div.save > h3{
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper > div.sustain > div.save > p{
+  margin-top: 5px;
+}
+
+div.wrapper > div.sustain > div.save > a{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 350ms;
+}
+
+div.wrapper > div.sustain > div.save > a:hover{
+  background-color: gray;
+}
+
+div.wrapper > div.explore {
+  width: 95%;
+  height: auto;
+  
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  
+}
+
+div.wrapper > div.explore > div.header {
+  width: 100%;
+  height: 45.6px;
+  padding: 0px 0px 100px 0px;
+  
+  
+}
+
+div.wrapper > div.explore > div.header >h4{
+  font-size: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper > div.explore > div.main{
+width: 95%;
+height: 732px;
+
+margin: 0 auto;
+text-align: center;
+}
+
+div.wrapper > div.explore > div.main>div.img{
+  width: 49%;
+  height: 100%;
+  
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+
+
+div.wrapper > div.explore > div.main>div.text{
+  width: 49%;
+  height: 100%;
+  
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 80px;
+  position: relative;
+}
+
+div.wrapper > div.explore > div.main>div.text>div{
+  width: 100%;
+  height: 80px;
+  
+  margin-bottom: 3px;
+  overflow: hidden;
+
+}
+
+div.wrapper > div.explore > div.main>div.text>div >h4{
+  font-size: 24px;
+  
+  padding-top: 10px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+div.wrapper > div.explore > div.main>div.text>div >h4 > span{
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(1):hover{
+  height: 147px;
+  border-top: 2px solid black;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(2):hover{
+  height: 147px;
+  border-top: 2px solid black;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(2):hover>div.img02{
+  opacity: 1;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(3):hover{
+  height: 147px;
+  border-top: 2px solid black;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(3):hover>div.img03{
+  opacity: 1;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(4):hover{
+  height: 147px;
+  border-top: 2px solid black;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(4):hover>div.img04{
+  opacity: 1;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(5):hover{
+  height: 147px;
+  border-top: 2px solid black;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(5):hover>div.img05{
+  opacity: 1;
+}
+
+
+
+div.wrapper > div.explore > div.main>div.text>div>h1{
+  padding: 20px 0;
+}
+
+.active{
+  opacity: 1 !important;
+}
+div.wrapper > div.explore > div.main>div.text>div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(1)>div.img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  right: 102.8%;
+  top: 0;
+  opacity: 0;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(2)>div.img02{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  right: 102.8%;
+  top: 0;
+  opacity: 0;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(3)>div.img03{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  right: 102.8%;
+  top: 0;
+  opacity: 0;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(4)>div.img04{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  right: 102.8%;
+  top: 0;
+  opacity: 0;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(5)>div.img05{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  right: 102.8%;
+  top: 0;
+  opacity: 0;
+}
+
+div.wrapper > div.explore > div.main>div.text>div:nth-of-type(1)>div.img{
+  opacity: 1;
+}
+
+
+div.wrapper > div.title{
+  width: 95%;
+  height: 46px;
+  
+  margin: 50px auto 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.wrapper > div.title >h4{
+  font-size: 38px;
+
+}
+
+div.wrapper > div.search{
+  width: 400px;
+  height: 50px;
+  background-color: rgb(247, 247, 247);
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 2px solid rgb(158, 219, 223) ;
+}
+
+div.wrapper > div.search > i{
+  width: 10%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 50px;
+  padding-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.wrapper > div.search > form{
+  display: inline-block;
+  vertical-align: top;
+  width: 87%;
+  height: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  padding-left: 15px;
+  outline: none;
+}
+
+div.wrapper > div.search > form >input{
+  font-size: 20px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+  outline: none;
+}
+
+div.wrapper > div.link{
+  width: 100%;
+  height: 80px;
+  
+  margin-top: 5px;
+  
+}
+
+div.wrapper > div.link > div.link1{
+  width: 100%;
+  height: 40px;
+  
+  text-align: center;
+  
+}
+
+div.wrapper > div.link > div.link1 > a{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 9px 20px;
+  line-height: 40px;
+  margin: 0 3px;
+  border: 1px solid lightgray;
+}
+
+div.wrapper > div.link > div.link1 > a:hover{
+
+  background-color: #ece5e5;
+}
+
+div.wrapper > div.link > div.link2{
+  width: 100%;
+  height: 40px;
+  
+  text-align: center;
+}
+
+div.wrapper > div.link > div.link2 > a{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 8px 12px;
+  line-height: 40px;
+  border: 1px solid lightgray;
+}
+
+div.wrapper > div.link > div.link2 > a:hover{
+
+  background-color: #ece5e5;
+}
+
+div.wrapper > div.exp{
+  width: 90%;
+  height: 910px;
+  
+  margin: 0 auto;
+}
+
+div.wrapper > div.exp > div.word{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+line-height: 2.1;
+padding-left: 30px;
+}
+
+div.wrapper > div.exp > div.word > p{
+  padding: 10px 0;
+}
+
+div.wrapper > div.exp > div.word > p > a{
+  color: rgb(63, 14, 239);
+  cursor: pointer;
+}
+
+div.wrapper > div.end{
+  width: 100%;
+  height: 57px;
+  
+  display: inline-block;
+  vertical-align: top;
+  line-height: 57px;
+  border: 1px solid lightgray;
+  margin-top: 90px;
+}
+
+div.wrapper > div.end > p{
+  font-size: 14px;
+  text-align: center;
+  
+}
+
+div.wrapper > div.end > p > span:nth-of-type(1){
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+div.wrapper > div.end > p > a{
+  font-size: 14px;
+  color: black;
+  padding-left: 20px;
+
+}
+
+div.wrapper > div.footer{
+  width: 100%;
+  height: 746px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin: 0 auto;
+  
+}
+
+div.wrapper > div.footer > div{
+  width: 360px;
+  height: 748px;
+  display: inline-block;
+  vertical-align: top;
+  border-left: 1px solid lightgray;
+}
+
+div.wrapper > div.footer > div > ul{
+  width: 100%;
+}
+
+div.wrapper > div.footer > div > ul > li{
+  padding: 8px 40px;
+}
+
+
+div.wrapper > div.footer > div > ul > li > a{
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(95, 76, 76);
+  font-weight: 100;
+}
+
+div.wrapper > div.footer > div > ul > li:hover > a{
+  text-decoration: 1px solid #2d00aa underline;
+  color: #2d00aa;
+}
+
+.li-style{
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 10px 0 15px;
+}
